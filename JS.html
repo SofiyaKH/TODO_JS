@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="nobody">
+    <div id = 'main'>
+      <div class="button">
+        <input type ="text" onkeydown="keyEnter(event)">
+        <input type="button" value="Add" onclick="add()">
+        <input type="button" value="Message" onclick="modal()">
+      </div>
+      <div id ='items'>
+        <div id="messageOfEmpty"></div>
+      </div>    
+      <p>Всего:<span>0</span></p>
+      <div id="message"></div>
+    </div>    
+  </div>
+
+  <div id="overLay" >
+    <div id="overLayBack" onclick="ok()"> </div>
+    
+    <div id="modal">
+      <div class="headline"><p>Какой-то заголовок...</p> <img id="imgModal" src="x2.png" onclick="ok()"></div>
+      <div id="content"> <p>Какой-то текст ... </p></div>
+      <div class="instruments">
+         <div class ="buttonOk"><input  type="button" value="ОК" onclick="ok()"></div>     
+         <div class ="buttonOk"><input type="button" value="Отменить" onclick="ok()"></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src = 'script.js'></script>
+</body>
+</html>
